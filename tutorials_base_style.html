@@ -1,0 +1,379 @@
+<div id="mainDiv">
+    <h1>Page Title</h1>
+    <ul><li>test</li></ul>
+    <ol><li>test</li></ol>
+    
+    <h2>New Features</h2>
+    
+<div>
+<button id="myBtn" onclick="topFunction()" title="Go to top"><svg class="icon-cheveron-up" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path class="secondary" d="M8.7 13.7a1 1 0 1 1-1.4-1.4l4-4a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1-1.4 1.4L12 10.42l-3.3 3.3z" fill-rule="evenodd"></path> </svg></button>
+    <style type="text/css">:root {
+        --blue: #3c72f2;
+        --lightBlue: #7295fd;
+        --img-video-shadow: 0px 0px 10px #888888;
+        --page-width: 950px;
+      }
+    
+      #mainDiv {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: var(--page-width);
+      }
+    
+      #mainDiv>ul,
+      #mainDiv>ol {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    
+      #mainDiv ul>li,
+      #mainDiv ol>li {
+        margin-bottom: 9px;
+        margin-top: 9px;
+      }
+    
+      #mainDiv ul {
+        list-style: none;
+        /* Remove default bullets */
+      }
+    
+      #mainDiv ul li::before {
+        content: "\2022";
+        color: var(--blue);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    
+      #mainDiv ol {
+        list-style-type: upper-alpha;
+      }
+    
+      #mainDiv ol ul {
+        list-style: none;
+      }
+    
+      #mainDiv ol ul li::before {
+        content: "\2022";
+        color: var(--blue);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    
+      #mainDiv a,
+      #mainDiv a:visited {
+        text-decoration: none;
+        color: var(--blue);
+      }
+    
+      #mainDiv h3 a {
+        color: inherit;
+      }
+    
+      #mainDiv table {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+      }
+    
+      #mainDiv table,
+      #mainDiv td,
+      #mainDiv th {
+        border-collapse: separate;
+        border-spacing: 0;
+        border: 1px solid rgb(201, 197, 197);
+      }
+    
+      #mainDiv table ul,
+      #mainDiv table ol {
+        padding-inline-start: 15px;
+      }
+    
+      #mainDiv th {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+      }
+    
+      #mainDiv td {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        min-width: 300px;
+        max-width: 300px;
+      }
+    
+      #mainDiv .fancy-table {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        overflow: scroll;
+        max-height: 90vh;
+      }
+    
+      #mainDiv .small-table {
+        display: table;
+      }
+    
+      #mainDiv .fancy-table th {
+        background-color: var(--blue);
+        position: sticky;
+        top: 0;
+        z-index: 900;
+      }
+    
+      #mainDiv .fancy-table thead th:first-child {
+        z-index: 950;
+      }
+    
+      #mainDiv .fancy-table td:nth-child(1) {
+        border-right-width: 3px;
+        text-align: left;
+        min-width: 210px;
+        max-width: 210px;
+        position: sticky;
+        left: 0;
+        z-index: 800;
+        background-color: lightgray;
+      }
+    
+      #mainDiv .fancy-table th:nth-child(1) {
+        border-right-width: 3px;
+        text-align: left;
+        min-width: 210px;
+        max-width: 210px;
+        position: sticky;
+        left: 0;
+        z-index: 900;
+      }
+    
+      #mainDiv .fancy-table tr:hover td {
+        background-color: var(--lightBlue);
+      }
+    
+      #mainDiv img {
+        display: block;
+        max-width: 600px;
+        max-height: 600px;
+        box-shadow: var(--img-video-shadow);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    
+      #mainDiv .move-img-left {
+        margin-left: unset;
+        margin-right: unset;
+      }
+    
+    
+      #mainDiv .no-bg {
+        display: block;
+        max-width: 600px;
+        max-height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        box-shadow: none;
+      }
+    
+      #mainDiv p,
+      #mainDiv li {
+        font-size: 16px;
+      }
+    
+      #mainDiv table p,
+      #mainDiv table li,
+      #mainDiv table td {
+        font-size: inherit;
+      }
+    
+      #mainDiv video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: var(--img-video-shadow);
+      }
+    
+      .toc,
+      .toc:visited {
+        display: block;
+        font-size: 16px;
+        margin-left: 40px;
+        color: #3c72f2;
+        list-style: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .toc-main,
+      .toc-main:visited {
+        display: block;
+        font-size: 16px;
+        margin-left: 40px;
+        color: var(--blue);
+        list-style: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .toc-sub,
+      .toc-sub:visited {
+        display: block;
+        font-size: 16px;
+        margin-left: 80px;
+        color: var(--blue);
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .toc-sub2,
+      .toc-sub2:visited {
+        display: block;
+        font-size: 16px;
+        margin-left: 120px;
+        color: var(--blue);
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+    
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 50px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #f0f4f8;
+        color: var(--blue);
+        cursor: pointer;
+        padding: 8px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 2em;
+      }
+    
+      #myBtn:hover {
+        background-color: var(--blue);
+        color: white;
+      }
+    </style>
+    <script>
+      const primaryColor = "#3c72f2";
+    
+      const heading1Style = () => {
+        let headings = document
+          .getElementById("mainDiv")
+          .getElementsByTagName("H1");
+        headings = Array.from(headings);
+        headings.map((heading) => {
+          const text = heading.innerText;
+          heading.innerText = "";
+          const node = document.createElement("span");
+          node.setAttribute(
+            "style",
+            `display: block; font-size: 40px; color: ${primaryColor};font-weight: 600;text-transform:uppercase; margin-bottom: 15px; letter-spacing: 1.15px;`
+          );
+          heading.appendChild(node).innerText = text;
+        });
+      };
+    
+      const heading2Style = () => {
+        h2Color = "#3c72f2";
+        let headings = document
+          .getElementById("mainDiv")
+          .getElementsByTagName("h2");
+        headings = Array.from(headings);
+        headings.map((heading) => {
+          const spanNode = document.createElement("span");
+          const h2Child = heading.children[0];
+          const text = heading.innerText;
+          heading.innerText = "";
+          spanNode.setAttribute(
+            "style",
+            `display: block; margin-top: 45px; color: ${h2Color};text-transform:uppercase; font-size: 30px; letter-spacing: 1.15px;`
+          );
+          if (h2Child) {
+            heading.appendChild(spanNode).appendChild(h2Child);
+          } else {
+            let anchorTag = document.createElement("a");
+            anchorTag.id = text;
+            anchorTag.setAttribute("name", text);
+            anchorTag.appendChild(spanNode);
+            spanNode.innerText = text;
+            heading.appendChild(anchorTag);
+          }
+        });
+      };
+    
+      const heading3Style = () => {
+        let headings = document
+          .getElementById("mainDiv")
+          .getElementsByTagName("h3");
+        console.log(headings);
+        headings = Array.from(headings);
+        headings.map((heading) => {
+          const text = heading.innerText;
+          const h3Child = heading.children[0];
+          heading.innerText = "";
+          const spanNode = document.createElement("span");
+          console.log(h3Child);
+          spanNode.setAttribute(
+            "style",
+            `display: block; font-size: 25px;margin-bottom: 30px; margin-top: 35px; letter-spacing: 1.15px;`
+          );
+          if (h3Child) {
+            heading.appendChild(spanNode).appendChild(h3Child);
+            console.log("Anchor found");
+          } else {
+            spanNode.innerText = text;
+            heading.appendChild(spanNode);
+          }
+        });
+      };
+    
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      function loadStyles() {
+        heading1Style();
+        heading2Style();
+        heading3Style();
+      }
+      window.onLoad = loadStyles();
+    </script></p>
+    
